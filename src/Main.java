@@ -24,6 +24,10 @@ public class Main {
         } catch (InputMismatchException | IOException error) {
             System.err.println("A opção deve ser informada como um número inteiro! ");
             System.err.println("Erro: " + error);
+        } catch (IllegalArgumentException error) {
+            System.out.println("");
+            System.err.println("Informe sua key na respectiva classe!");
+            System.err.println("Erro: " + error);
         }
     }
 }

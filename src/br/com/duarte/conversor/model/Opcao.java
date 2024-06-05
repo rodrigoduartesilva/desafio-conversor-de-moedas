@@ -113,7 +113,7 @@ public class Opcao {
                 break;
 
             case 7:
-                System.out.print("Operalção finalizada!");
+                System.out.print("Operação finalizada!");
                 break;
 
             default:
