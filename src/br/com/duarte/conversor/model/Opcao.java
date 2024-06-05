@@ -2,6 +2,7 @@ package br.com.duarte.conversor.model;
 
 import br.com.duarte.conversor.service.ExchangerateApi;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Opcao {
@@ -19,7 +20,7 @@ public class Opcao {
         this.opcaoSelecionada = opcaoSelecionada;
     }
 
-    public void valorSelecionado(int opcaoSelecionada) {
+    public void valorSelecionado(int opcaoSelecionada) throws IOException {
         switch (opcaoSelecionada) {
             case 1:
                 System.out.println("Real --> Dolar");
@@ -31,6 +32,9 @@ public class Opcao {
 
                 System.out.println("Valor R$ " + valorParaConverter + " [BRL] corresponde ao valor de $ "
                         + (valorParaConverter * valorConvertido) + " [USD]");
+
+                HistoricoConversoes historico = new HistoricoConversoes();
+                historico.historico(valorDolar);
                 break;
 
             case 2:
@@ -43,6 +47,9 @@ public class Opcao {
 
                 System.out.println("Valor $ " + valorParaConverter + " [USD] corresponde ao valor de R$ "
                         + (valorParaConverter * valorConvertido) + " [BRL]");
+
+                historico = new HistoricoConversoes();
+                historico.historico(valorDolar);
                 break;
 
             case 3:
@@ -55,6 +62,9 @@ public class Opcao {
 
                 System.out.println("Valor R$ " + valorParaConverter + " [BRL] corresponde ao valor de $ "
                         + (valorParaConverter * valorConvertido) + " [ARS]");
+
+                historico = new HistoricoConversoes();
+                historico.historico(valorDolar);
                 break;
 
             case 4:
@@ -67,6 +77,9 @@ public class Opcao {
 
                 System.out.println("Valor $ " + valorParaConverter + " [ARS] corresponde ao valor de R$ "
                         + (valorParaConverter * valorConvertido) + " [BRL]");
+
+                historico = new HistoricoConversoes();
+                historico.historico(valorDolar);
                 break;
 
             case 5:
@@ -79,6 +92,9 @@ public class Opcao {
 
                 System.out.println("Valor R$ " + valorParaConverter + " [BRL] corresponde ao valor de $ "
                         + (valorParaConverter * valorConvertido) + " [COP]");
+
+                historico = new HistoricoConversoes();
+                historico.historico(valorDolar);
                 break;
 
             case 6:
@@ -91,6 +107,9 @@ public class Opcao {
 
                 System.out.println("Valor $ " + valorParaConverter + " [COP] corresponde ao valor de R$ "
                         + (valorParaConverter * valorConvertido) + " [BRL]");
+
+                historico = new HistoricoConversoes();
+                historico.historico(valorDolar);
                 break;
 
             case 7:
