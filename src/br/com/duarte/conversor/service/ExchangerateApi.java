@@ -12,7 +12,7 @@ import java.net.http.HttpResponse;
 public class ExchangerateApi {
 
     public Conversor conversorMoeda(String base_code, String target_code) {
-        String key = "ea41bbca0bc480dea9514b84";
+        String key = "YOUR KEY";
         String url = "https://v6.exchangerate-api.com/v6/" + key + "/pair/" + base_code + "/" + target_code;
 
         HttpClient client = HttpClient.newHttpClient();
@@ -21,6 +21,7 @@ public class ExchangerateApi {
                 .build();
 
         try {
+
             HttpResponse<String> response = HttpClient
                     .newHttpClient()
                     .send(request, HttpResponse.BodyHandlers.ofString());
