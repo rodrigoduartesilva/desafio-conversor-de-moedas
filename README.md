@@ -1,5 +1,9 @@
 # Desafio - Conversor de Moedas (Oracle & Alura)
 
+<div align="center">
+    <img src="./Badge-Conversor.png" alt="Badge Conversor" width="250" />
+</div>
+
 ### Enunciado:
 
 #### Desenvolva um conversor de moedas em Java, usando a API Exchangerate.
