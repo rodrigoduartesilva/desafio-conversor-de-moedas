@@ -1,3 +1,5 @@
+package br.com.duarte.conversor.main;
+
 import br.com.duarte.conversor.model.Menu;
 import br.com.duarte.conversor.model.Opcao;
 
