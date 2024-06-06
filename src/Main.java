@@ -14,6 +14,7 @@ public class Main {
         System.out.println(menu.textoMenu());
 
         try {
+
             do {
                 System.out.println("");
                 System.out.print("Selecione uma das opções acima: ");
@@ -21,13 +22,17 @@ public class Main {
 
                 opcao.valorSelecionado(opcao.getOpcaoSelecionada());
             } while (opcao.getOpcaoSelecionada() != 7);
+
         } catch (InputMismatchException | IOException error) {
+
             System.err.println("A opção deve ser informada como um número inteiro! ");
             System.err.println("Erro: " + error);
+
         } catch (IllegalArgumentException error) {
+
             System.out.println("");
             System.err.println("Informe sua key na respectiva classe!");
             System.err.println("Erro: " + error);
-        }
+                    }
     }
 }
